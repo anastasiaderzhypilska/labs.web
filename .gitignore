@@ -1,0 +1,8 @@
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Файли редакторів
+.vscode/
+.idea/
+*.swp
