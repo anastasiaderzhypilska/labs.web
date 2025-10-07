@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 8px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  margin: 15px 0;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#total {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#zoos {
+  margin-top: 25px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 60%;
+  margin: 10px auto;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+  margin-right: 8px;
+}
+button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+  transform: scale(1.03);
+}
