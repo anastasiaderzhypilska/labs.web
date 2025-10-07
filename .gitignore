@@ -1,0 +1,17 @@
+# Node modules (якщо є package.json і node_modules)
+node_modules/
+
+# Локальні конфігурації IDE
+.vscode/
+.idea/
+
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+
+# Тимчасові файли
+*.tmp
+*.swp
