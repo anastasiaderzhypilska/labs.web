@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "City Zoo",
+    "visitors": 50000,
+    "animals": 200,
+    "public_string": "Urban Area"
+  },
+  {
+    "id": 2,
+    "name": "Safari Park",
+    "visitors": 75000,
+    "animals": 300,
+    "public_string": "Wildlife Reserve"
+  },
+  {
+    "id": 3,
+    "name": "National Zoo",
+    "visitors": 100000,
+    "animals": 500,
+    "public_string": "National Park"
+  },
+  {
+    "id": 1761028635473,
+    "name": "Green Valley Zoo",
+    "visitors": 1000,
+    "animals": 774,
+    "public_string": "43"
+  }
+]
