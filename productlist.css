@@ -1,0 +1,26 @@
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.view-more button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-more button:hover {
+  background-color: #555;
+}
