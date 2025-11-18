@@ -1,0 +1,6 @@
+.item-main { max-width:1100px; margin:30px auto; padding:0 16px; }
+.item-card { display:flex; gap:20px; background:#fff; border-radius:12px; padding:18px; box-shadow:0 8px 20px rgba(0,0,0,0.06); align-items:flex-start; }
+.item-img { width:380px; height:320px; object-fit:cover; border-radius:8px; }
+.item-info { flex:1; }
+.primary-btn { padding:8px 14px; border-radius:20px; background:#1976d2; color:#fff; text-decoration:none; }
+.not-found { text-align:center; padding:60px 20px; }
