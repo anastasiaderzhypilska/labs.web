@@ -1,0 +1,464 @@
+.item-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-btn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #1565c0;
+}
+
+.zoo-details {
+  display: flex;
+  gap: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.zoo-detail-image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.zoo-info {
+  flex: 1;
+}
+
+.zoo-info h1 {
+  margin: 0 0 15px 0;
+  color: #1e88e5;
+}
+
+.zoo-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.zoo-stats {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.stat:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: #1976d2;
+}
+
+.ticket-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+}
+
+.ticket-section h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.ticket-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.ticket-option {
+  background: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.ticket-option:hover {
+  border-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+.ticket-option.selected {
+  background: #e3f2fd;
+  border-color: #1976d2;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+}
+
+.ticket-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ticket-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ticket-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #e91e63;
+}
+
+.quantity-control {
+  margin-bottom: 20px;
+}
+
+.quantity-control label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-selector button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1976d2;
+  background: white;
+  color: #1976d2;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.quantity-selector button:hover:not(:disabled) {
+  background: #1976d2;
+  color: white;
+}
+
+.quantity-selector button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-selector span {
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.total-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: #45a049;
+}
+
+/* Модальне вікно */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.modal p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.continue-btn {
+  flex: 1;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.continue-shopping-btn {
+  flex: 1;
+  padding: 12px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.continue-btn:hover {
+  background: #1565c0;
+}
+
+.continue-shopping-btn:hover {
+  background: #e0e0e0;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 20px;
+}
+
+.error {
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .zoo-details {
+    flex-direction: column;
+  }
+  
+  .zoo-detail-image {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .ticket-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+.ticket-section {
+  padding: 15px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.ticket-option {
+  padding: 12px;
+}
+
+.ticket-label {
+  font-size: 14px;
+}
+
+.ticket-description {
+  font-size: 12px;
+}
+
+.ticket-price {
+  font-size: 16px;
+  color: #e91e63;
+}
+
+.quantity-selector button {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+}
+
+.quantity-selector span {
+  font-size: 17px;
+  min-width: 28px;
+}
+
+.total-price {
+  font-size: 20px;
+}
+
+.small-btn {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 18px;
+  margin-top: 12px;
+}
+
+
+.zoo-detail-image {
+  width: 350px;
+  height: 260px;
+}
+
+
+
+
+
+.ticket-section {
+  padding: 15px 18px;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  max-width: 600px;
+}
+
+.ticket-section h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+
+.ticket-options {
+  display: flex;
+  gap: 12px;
+}
+
+.ticket-option {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 160px;           
+  min-height: 110px;      
+}
+
+
+.ticket-option.selected {
+  background: #e8f2ff;
+  border-color: #1976d2;
+}
+
+.ticket-label {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.ticket-description {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.ticket-price {
+  font-size: 15px;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+
+.quantity-control label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.quantity-selector button {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+.quantity-selector span {
+  font-size: 16px;
+  min-width: 24px;
+}
+
+
+.total-price {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+
+.add-to-cart-btn {
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 250px;
+}
+
+
+.zoo-detail-image {
+  width: 360px;
+  height: 260px;
+  border-radius: 12px;
+}
