@@ -1,0 +1,36 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { ZooProvider } from './zoocontext';
+import store from './redux/store';
+import Home from "./components/home/home";
+import Catalog from "./components/catalog/catalog";
+import ItemPage from "./components/itempage/itempage";
+import About from "./components/about/about";
+import Cart from "./components/cart/Cart";
+import Checkout from "./components/checkout/checkout";
+import Success from "./components/success/success";
+
+import "./index.css";
+
+function App() {
+  return (
+    <Provider store={store}>
+      <ZooProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/item/:id" element={<ItemPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/success" element={<Success />} />
+          </Routes>
+        </Router>
+      </ZooProvider>
+    </Provider>
+  );
+}
+
+export default App;
